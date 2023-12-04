@@ -61,6 +61,7 @@ if(!empty($data)) {
             $error = $e->getMessage();
             echo "Erro: $error";
         }
+        
     } else if($data["type"] === "delete") {
 
         $id = $data["id"];
@@ -89,8 +90,6 @@ if(!empty($data)) {
 
     //selecao de dados
 } else {
-
-    $id;
 
     if(!empty($_GET)) {
         $id = $_GET["id"];
